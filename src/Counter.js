@@ -20,8 +20,10 @@ class Counter extends React.Component {
       <div style={{backgroundColor: name,color: 'white'}}>
         <h1>{name} counter</h1>
         <h1>{value}</h1>
-        <button onClick={this.inc}>+</button>
-        <button onClick={this.dec}>-</button>
+        <div className='count_btn'>
+          <button onClick={this.inc}>+</button>
+          <button onClick={this.dec}>-</button>
+        </div>
       </div>
     )
   }
